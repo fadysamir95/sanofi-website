@@ -1,0 +1,82 @@
+header .top-header {
+    background-color: #fff;
+    padding: 12px 0;
+    height: 100%;
+    box-shadow: 1px 1px 3px #d4d0d0;
+}
+header .social-icons a {
+    color: #fff;
+}
+header .social-icons svg {
+    background-color: #82C7CF;
+    border-radius: 50%;
+    padding: 5px;
+    width: 25px !important;
+    height: 24px;
+}
+header .contact {
+    display: flex;
+    align-items: center;
+}
+header .contact a {
+    color: #82C7CF;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+header .contact svg {
+    background-color: #82C7CF;
+    border-radius: 50%;
+    padding: 5px;
+    width: 25px !important;
+    height: 24px;
+    color: #fff;
+}
+header .navbar {
+    background-color: #74C1CA;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 8px 16px;
+}
+header .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+    margin-right: 1.7rem;
+}
+header .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: #fff;
+}
+header .vertical-line {
+    border-right: 1px solid #589399;
+    width: 5px;
+    height: 98px;
+    margin-left: 16px;
+}
+header .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: #fff;
+}
+header .middle-header {
+    background-color: #818181;
+    padding: 8px 16px;
+}
+header .middle-header .search, header .middle-header .welcome {
+    display: flex;
+    align-items: center;
+}
+header .middle-header .welcome .text {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+header .middle-header .welcome .text a {
+    color: #fff;
+    font-size: 13px;
+}
+header .nav-item.active .nav-link {
+    color: #FD0202;
+}

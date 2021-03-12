@@ -1,0 +1,619 @@
+@import "header.css";
+@import "buttons.css";
+@import "footer.css";
+
+@media (min-width: 1200px) {
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+        max-width: 1300px;
+    }
+}
+
+/* Main CSS */
+.sec-title-blue {
+    color: #74C1CA;
+    font-weight: 600;
+    font-family: britannic;
+}
+.sec-title-pink {
+    color: #ff706b;
+    font-weight: 600;
+    font-family: britannic;
+}
+.sec-title-gray {
+    color: #5B5B5B;
+    font-weight: 600;
+    font-family: britannic;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover, a:active, a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+.horizontal-line {
+    border-top: 4px solid #ADADAD;
+    width: 95px;
+}
+body {
+    overflow-x: hidden;
+}
+.paragraph {
+    font-size: 20px;
+    color: #5B5B5B;
+    font-family: calibrir;
+}
+main {
+    position: relative;
+    z-index: 2;
+}
+
+/* Fonts */
+@font-face {
+    font-family: britannic;
+    src: url(../fonts/britannic-bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: calibrib;
+    src: url(../fonts/calibrib.ttf);
+}
+@font-face {
+    font-family: calibrir;
+    src: url(../fonts/calibrir.ttf);
+}
+
+/* Home Page */
+/* Slider */
+.slider-sec .carousel-item img {
+    max-height: 450px;
+}
+.slider-sec .carousel-indicators li {
+    width: 7px;
+    border-radius: 50%;
+    height: 7px;
+    background-color: #5B5B5B;
+}
+.slider-sec .carousel-indicators {
+    flex-direction: column-reverse;
+    bottom: 38%;
+    margin-left: 5%;
+}
+.slider-sec .carousel-control-prev {
+    left: 0;
+    width: 11%;
+    height: 5px;
+    top: 109px;
+}
+.slider-sec .carousel-control-prev-icon {
+    background-image: url('../images/icons/chevron-up.png');
+}
+.slider-sec .carousel-control-next {
+    left: 0;
+    width: 11%;
+    height: 15px;
+    top: unset;
+    bottom: 131px;
+}
+.slider-sec .carousel-control-next-icon {
+    background-image: url('../images/icons/chevron-down.png');
+}
+.slider-sec .slider-caption {
+    position: absolute;
+    left: 101px;
+    top: 114px;
+}
+.slider-sec .slider-caption h1 {
+    font-size: 30px;
+    color: #5B5B5B;
+    font-family: britannic;
+}
+.slider-sec .slider-caption p {
+    font-size: 16px;
+    color: #5B5B5B;
+    font-family: calibrib;
+    max-width: 295px;
+    line-height: 17px;
+}
+
+/* Upcoming Section */
+.upcoming-sec {
+    position: relative;
+}
+.upcoming-sec .vertical-line {
+    border: 1px dashed #5B5B5B;
+    height: 871px;
+    position: absolute;
+    left: 50%;
+    top: 95px;
+}
+.upcoming-sec .date {
+    background-color: #74c1ca;
+    padding: 4px 32px;
+    border-radius: 13px;
+    margin-bottom: 40px;
+}
+.upcoming-sec .date p {
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+}
+.upcoming-sec .congress-right .congress-date {
+    border-bottom: 3px solid #74c1ca;
+    width: 215px;
+    margin-bottom: 8px;
+}
+.upcoming-sec .congress-left .congress-date {
+    border-bottom: 3px solid #74c1ca;
+    width: auto;
+    margin-bottom: 8px;
+}
+.upcoming-sec .congress-date p {
+    color: #FF706B;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.upcoming-sec .congress {
+    margin: 20px 0;
+}
+.upcoming-sec .congress-left .congress-date p {
+    text-align: right;
+}
+.upcoming-sec .congress-img img {
+    width: 75px;
+    height: 90px;
+    margin-right: 10px;
+}
+.upcoming-sec .congress-left .congress-img img {
+    margin-right: 0px;
+    margin-left: 10px
+}
+.upcoming-sec .congress-info .congress-title, .upcoming-sec .congress-info .congress-location {
+    color: #74c1ca;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.upcoming-sec .congress-info .congress-desc {
+    color: #5B5B5B;
+    font-size: 13px;
+    max-width: 170px;
+}
+.upcoming-sec .more {
+    background-color: #74c1ca;
+    padding: 4px 32px;
+    border-radius: 13px;
+    margin-bottom: 40px;
+}
+.upcoming-sec .more p {
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Up-to-date Section */
+.up-to-date-sec {
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.up-to-date-sec .stay-img {
+    position: absolute;
+    top: -106px;
+    left: 53px;
+    z-index: 2;
+}
+.up-to-date-sec .stay-img img {
+    width: 492px;
+}
+.up-to-date-sec .stay-form {
+    border: 2px solid #ff706b;
+    padding: 37px 15px 37px 407px;
+    border-bottom-right-radius: 20px;
+    border-left: 0;
+}
+.up-to-date-sec .stay-form h3 {
+    color: #74c1ca;
+    font-weight: 600;
+    font-size: 45px;
+    font-family: britannic;
+}
+.up-to-date-sec .stay-form p {
+    color: #5E5E5E;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 333px;
+    margin: 11px 0 20px 0;
+}
+.up-to-date-sec .stay-form input {
+    width: 308px;
+    padding: 5px;
+}
+
+/* Video Section */
+.video-sec {
+    position: relative;
+}
+.video-sec .video-icon {
+    position: absolute;
+    top: 42.3%;
+    left: 48.5%;
+    z-index: 3;
+}
+.video-sec .video-bg {
+    height: 400px;
+    background-color: #F5F5F5;
+}
+
+/* Become a Member Section */
+.become-sec {
+    position: relative;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    padding: 0 90px;
+}
+.become-sec .become-img {
+    position: absolute;
+    top: -4px;
+    right: 100px;
+    z-index: 2;
+}
+.become-sec .become-img img {
+    width: 378px;
+}
+.become-sec .become-form {
+    border: 2px solid #74c1ca;
+    padding: 37px 15px 37px 25px;
+    border-top-left-radius: 20px;
+    border-right: 0;
+}
+.become-sec .become-form h3 {
+    color: #ff706b;
+    font-weight: 600;
+    font-size: 45px;
+    font-family: britannic;
+}
+.become-sec .become-form p {
+    color: #5E5E5E;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 333px;
+    margin: 11px 0 20px 0;
+}
+.become-sec .become-form .more {
+    color: #5E5E5E;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Scientific Section */
+.scientific-sec {
+    padding: 0 90px;
+}
+.scientific-sec .card {
+    border: none;
+    cursor: pointer;
+}
+.scientific-sec .card .card-header {
+    background-color: #F1F9FA;
+    border-color: #F1F9FA;
+    height: 300px;
+}
+.scientific-sec .card .card-body {
+    background-color: #74C1CA;
+    padding: 25px;
+}
+.scientific-sec .card .card-body .card-title, .scientific-sec .card .card-body .card-text {
+    color: #fff;
+    font-size: 16px;
+}
+.scientific-sec .card .card-body .card-title {
+    margin-bottom: 5px;
+}
+
+/* Contributions Section */
+.contributions-sec {
+    padding: 0 90px;
+}
+.contributions-sec .grid-area {
+    display: grid;
+    grid-gap: 15px;
+}
+.contributions-sec .item1 img {
+    height: 500px;
+    opacity: 40%;
+    cursor: pointer;
+}
+.contributions-sec .items img {
+    height: 238px;
+    width: 100%;
+    opacity: 40%;
+    cursor: pointer;
+}
+.contributions-sec .contribution-title {
+    position: absolute;
+    bottom: 0;
+    background-color: #5B5B5B;
+    width: 100%;
+    padding: 20px 16px;
+}
+.contributions-sec .contribution-title h4 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+/* Membership Section */
+.membership-sec .membership-desc {
+    color: #FF706B;
+    font-family: calibrir;
+    font-size: 20px;
+    text-align: center;
+    max-width: 660px;
+}
+.membership-sec .pricing-area {
+    padding: 0 100px;
+}
+.membership-sec .pricing-area .price {
+    color: #fff;
+    background-color: #74c1ca;
+    padding: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 14px;
+}
+.membership-sec .pricing-area .price h3 {
+    font-size: 110px;
+}
+.membership-sec .pricing-area .price .dollar-sign {
+    font-size: 60px;
+    margin-right: 8px;
+}
+.membership-sec .pricing-area .price p {
+    font-size: 40px;
+}
+.membership-sec .pricing-area .card {
+    border: 2px solid #5B5B5B;
+    border-radius: 14px;
+}
+.membership-sec .pricing-area .card .title p {
+    color: #74c1ca;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.membership-sec .pricing-area .card .item {
+    border-bottom: 1px solid #5B5B5B;
+    margin-bottom: 26px;
+}
+.membership-sec .pricing-area .card .item p {
+    color: #5B5B5B;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+/* Register Section */
+.register-sec .register-desc {
+    color: #FF706B;
+    font-family: calibrir;
+    font-size: 20px;
+    text-align: center;
+    max-width: 660px;
+}
+.register-sec form {
+    background-color: #fff;
+    border: 5px solid #74c1ca;
+    padding: 40px 80px;
+    margin: 0 100px;
+    border-radius: 12px;
+}
+.register-sec form .form-control {
+    background-color: #F1F9FA;
+    border-color: #a6ecf5;
+    border-radius: 6px;
+    color: #36bdcc;
+}
+.register-sec form .form-control::placeholder {
+    color: #36bdcc;
+}
+.register-sec form .form-control:hover, .register-sec form .form-control:active, .register-sec form .form-control:focus {
+    box-shadow: none;
+}
+.register-sec form .member {
+    text-decoration: underline;
+    color: #74c1ca;
+    font-size: 17px;
+    font-weight: 600;
+}
+.register-sec .question {
+    color: #5B5B5B;
+    font-size: 13px;
+}
+.register-sec .sign {
+    color: #74C1CA;
+    text-decoration: underline;
+    font-size: 13px;
+    margin-left: 0.4rem;
+    font-weight: 600;
+}
+
+/* About Page */
+/* Header Section */
+.header-sec h1 {
+    color: #5B5B5B;
+    font-size: 40px;
+}
+
+/* Welcome Section */
+.welcome-sec h2 {
+    color: #FF706B;
+    font-size: 30px;
+}
+.welcome-sec .welcome-wrapper {
+    display: flex;
+}
+.welcome-sec .welcome-wrapper .welcome-img {
+    width: 11%;
+}
+.welcome-sec .welcome-wrapper .welcome-img img {
+    width: 120px;
+    height: 120px;
+}
+.welcome-sec .welcome-wrapper .welcome-intro {
+    width: 17%;
+    border-right: 1px solid #707070;
+    margin-right: 2%;
+}
+.welcome-sec .welcome-wrapper .welcome-intro .linkedin img {
+    width: 25px;
+    height: 25px;
+}
+.welcome-sec .welcome-wrapper .welcome-intro .insta img {
+    width: 25px;
+    height: 25px;
+}
+.welcome-sec .welcome-wrapper .welcome-intro .facebook svg {
+    color: #3B5998;
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+}
+.welcome-sec .welcome-wrapper .welcome-intro .twitter svg {
+    color: #00ACEE;
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+}
+.welcome-sec .welcome-wrapper .welcome-intro .name {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'calibrir';
+}
+.welcome-sec .welcome-wrapper .welcome-intro .title {
+    font-size: 18px;
+    font-family: 'calibrir';
+}
+.welcome-sec .welcome-wrapper .welcome-txt {
+    width: 70%;
+}
+
+/* Members Section */
+.members-sec h2 {
+    color: #FF706B;
+    font-size: 30px;
+}
+.board-carousel .item .member-wrapper {
+    width: auto;
+}
+.board-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+}
+.members-sec .member-details {
+    display: flex;
+    background-color: #FF706B;
+    padding: 3px 11px;
+    flex-wrap: wrap;
+    width: 140px;
+    border-radius: 10px;
+    justify-content: center;
+}
+.members-sec .member-name {
+    font-size: 11px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+.members-sec .member-title {
+    font-size: 11px;
+    color: #fff;
+}
+
+/* History Section */
+.history-src {
+    position: relative;
+    z-index: 2;
+}
+.history-sec .powered {
+    bottom: 19px;
+    right: 17px;
+}
+.history-sec .powered p {
+    color: #000;
+    font-size: 14px;
+    font-family: calibrir;
+}
+.history-sec .powered p:first-child {
+    letter-spacing: 3px;
+}
+.history-sec .powered img {
+    width: 77px;
+    height: 16px;
+}
+.history-sec .video-icon {
+    position: absolute;
+    top: 43.3%;
+    left: 45.5%;
+    z-index: 3;
+}
+.history-sec .video-bg {
+    height: 100%;
+    background-color: #5B5B5B38;
+    opacity: 60%;
+}
+
+/* E-Journal Page */
+/* Cards Section */
+.cards-sec .card {
+    border: 0;
+}
+.cards-sec .card-body {
+    background-color: #74C1CA;
+}
+.cards-sec .card-title, .cards-sec .card-text {
+    color: #fff;
+}
+.cards-sec .card .time svg, .cards-sec .card .time span {
+    color: #fff;
+}
+.cards-sec .card .card-img-top {
+    height: 340px;
+}
+
+/* Congresses Page */
+/* Header Section */
+.header-sec .congresses-txt {
+    font-size: 23px;
+    font-family: 'calibrir';
+    color: #5B5B5B;
+}
+
+/* Congresses Cards Section */
+.congresses-cards-sec .card-left {
+    width: 40%;
+}
+.congresses-cards-sec .card-right {
+    width: 60%;
+    background-color: #74c1ca;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 10px 8px;
+}
+.congresses-cards-sec p {
+    color: #fff;
+}
+.congresses-cards-sec .date {
+    font-size: 14px;
+}
+.congresses-cards-sec .title {
+    font-size: 18px;
+}
+.congresses-cards-sec .vertical-line {
+    margin-top: -4px
+ }
